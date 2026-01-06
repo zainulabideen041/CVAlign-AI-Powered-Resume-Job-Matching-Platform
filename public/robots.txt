@@ -1,0 +1,26 @@
+# CV Align - AI Resume Analyzer
+# https://cvalign.onrender.com
+
+User-agent: *
+Allow: /
+Disallow: /auth
+Disallow: /wipe
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://cvalign.onrender.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Disallow: /auth
+Disallow: /wipe
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Disallow: /auth
+Disallow: /wipe
