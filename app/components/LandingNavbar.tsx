@@ -30,11 +30,11 @@ const LandingNavbar = () => {
           <Link to="/" className="flex items-center gap-3 group">
             <img
               src={logo}
-              alt="CV Align Logo"
+              alt="Job Winner Logo"
               className="w-10 h-10 rounded-xl shadow-md group-hover:shadow-lg group-hover:shadow-indigo-500/20 transition-all duration-300 object-contain"
             />
             <span className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              CV Align
+              Job Winner
             </span>
           </Link>
 

@@ -5,20 +5,57 @@ import { Link, useNavigate } from "react-router";
 import { usePuterStore } from "~/lib/puter";
 
 export function meta({}: Route.MetaArgs) {
-  const siteUrl = "https://cvalign.onrender.com";
+  const siteUrl = "https://jobwinner.vercel.app";
   const title =
-    "CV Align - Free AI Resume Analyzer & ATS Score Checker | Resume Builder";
+    "Job Winner - Free AI Resume Analyzer & ATS Score Checker | Resume Builder";
   const description =
     "Free AI-powered resume analyzer and ATS score checker. Get instant feedback on your resume, optimize for Applicant Tracking Systems, match with job descriptions, and improve your resume score. Best online resume scanner and CV analyzer tool.";
   const keywords =
-    "resume analyzer, ATS score checker, resume scanner, CV analyzer, resume builder, ATS resume checker, resume optimization, resume feedback, AI resume review, applicant tracking system, resume parser, job application, resume tips, career tools, resume grader, CV builder, resume score, free resume checker, online resume analyzer, best resume analyzer, resume ATS score, check resume ATS, resume keyword scanner, resume improvement, professional resume, resume writing, job search, career advice, resume templates, resume format, resume examples";
+    // Brand & Core Keywords
+    "job winner, jobwinner, jobwinner ai, ai resume analyzer, job winner app, job winner resume, " +
+    // Resume Analysis Keywords
+    "resume analyzer, AI resume analyzer, free resume analyzer, online resume analyzer, best resume analyzer, resume analysis tool, resume checker, resume scanner, resume reviewer, resume evaluator, resume grader, resume tester, resume validator, instant resume analyzer, professional resume analyzer, smart resume analyzer, " +
+    // ATS Keywords
+    "ATS score checker, ATS resume checker, ATS optimization, ATS friendly resume, ATS compatible resume, applicant tracking system, ATS scanner, ATS test, check ATS score, improve ATS score, ATS resume score, beat ATS, pass ATS, ATS resume optimization, ATS keyword scanner, ATS resume parser, " +
+    // CV Keywords
+    "CV analyzer, CV checker, CV scanner, CV optimizer, CV builder, CV maker, CV review, CV feedback, CV grader, CV score, CV analysis, professional CV, CV improvement, CV tips, " +
+    // Resume Building Keywords
+    "resume builder, resume maker, resume creator, resume generator, resume designer, resume template, resume format, resume layout, resume structure, professional resume, modern resume, creative resume, " +
+    // Job Search Keywords
+    "job application, job search, job hunting, career search, employment search, job seeker, job finder, career tools, job tools, employment tools, career development, job interview, interview preparation, " +
+    // Resume Optimization Keywords
+    "resume optimization, optimize resume, resume improvement, improve resume, resume enhancement, resume tips, resume advice, resume suggestions, resume feedback, resume recommendations, resume help, resume guide, resume writing, resume writing tips, resume writing service, " +
+    // Keyword & Matching Keywords
+    "resume keywords, keyword optimization, keyword scanner, keyword matcher, job description match, job match, resume match, skills match, qualifications match, experience match, " +
+    // Scoring & Rating Keywords
+    "resume score, resume rating, resume ranking, resume evaluation, resume assessment, resume performance, resume quality, resume effectiveness, " +
+    // Free & Online Keywords
+    "free resume checker, free ATS checker, free resume analyzer, free CV analyzer, online resume tool, web resume analyzer, cloud resume tool, " +
+    // AI & Technology Keywords
+    "AI resume review, AI powered resume, artificial intelligence resume, machine learning resume, automated resume checker, smart resume tool, intelligent resume analyzer, " +
+    // Career Keywords
+    "career advice, career tips, career counseling, career guidance, career coach, job coach, resume coach, career advancement, professional development, " +
+    // Action Keywords
+    "upload resume, analyze resume, check resume, scan resume, review resume, test resume, evaluate resume, grade resume, improve resume, optimize resume, fix resume, enhance resume, " +
+    // Industry Keywords
+    "tech resume, IT resume, software engineer resume, developer resume, marketing resume, sales resume, finance resume, healthcare resume, engineering resume, " +
+    // Format Keywords
+    "resume format checker, resume formatting, PDF resume, resume PDF, resume document, resume file, resume upload, " +
+    // Comparison Keywords
+    "best resume tool, top resume analyzer, leading resume checker, #1 resume scanner, resume tool comparison, " +
+    // Problem-Solution Keywords
+    "resume not getting interviews, resume rejected, improve interview chances, get more interviews, land dream job, job application success, resume success, " +
+    // Long-tail Keywords
+    "how to check ATS score, how to optimize resume for ATS, how to improve resume score, how to pass ATS, how to make ATS friendly resume, what is ATS score, resume ATS compatibility, " +
+    // Alternative Spellings & Variations
+    "résumé analyzer, résumé checker, résumé builder, curriculum vitae, CV analysis, resume analyse, resume analyser";
 
   return [
     // Primary Meta Tags
     { title },
     { name: "description", content: description },
     { name: "keywords", content: keywords },
-    { name: "author", content: "CV Align" },
+    { name: "author", content: "Job Winner" },
     {
       name: "robots",
       content:
@@ -38,8 +75,8 @@ export function meta({}: Route.MetaArgs) {
     { property: "og:image", content: `${siteUrl}/images/logo.png` },
     { property: "og:image:width", content: "1200" },
     { property: "og:image:height", content: "630" },
-    { property: "og:image:alt", content: "CV Align - AI Resume Analyzer" },
-    { property: "og:site_name", content: "CV Align" },
+    { property: "og:image:alt", content: "Job Winner - AI Resume Analyzer" },
+    { property: "og:site_name", content: "Job Winner" },
     { property: "og:locale", content: "en_US" },
 
     // Twitter Card
@@ -48,11 +85,11 @@ export function meta({}: Route.MetaArgs) {
     { name: "twitter:title", content: title },
     { name: "twitter:description", content: description },
     { name: "twitter:image", content: `${siteUrl}/images/logo.png` },
-    { name: "twitter:image:alt", content: "CV Align - AI Resume Analyzer" },
+    { name: "twitter:image:alt", content: "Job Winner - AI Resume Analyzer" },
 
     // Additional SEO Meta Tags
-    { name: "application-name", content: "CV Align" },
-    { name: "apple-mobile-web-app-title", content: "CV Align" },
+    { name: "application-name", content: "Job Winner" },
+    { name: "apple-mobile-web-app-title", content: "Job Winner" },
     { name: "theme-color", content: "#4F46E5" },
     { name: "msapplication-TileColor", content: "#4F46E5" },
 
@@ -66,7 +103,7 @@ export function meta({}: Route.MetaArgs) {
       "script:ld+json": {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        name: "CV Align",
+        name: "Job Winner",
         alternateName: ["Resume Analyzer", "ATS Score Checker", "CV Analyzer"],
         url: siteUrl,
         description: description,
@@ -99,7 +136,7 @@ export function meta({}: Route.MetaArgs) {
       "script:ld+json": {
         "@context": "https://schema.org",
         "@type": "Organization",
-        name: "CV Align",
+        name: "Job Winner",
         url: siteUrl,
         logo: `${siteUrl}/images/logo.png`,
         sameAs: [],
@@ -116,7 +153,7 @@ export function meta({}: Route.MetaArgs) {
             name: "What is an ATS score checker?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "An ATS score checker analyzes your resume to determine how well it will perform with Applicant Tracking Systems used by employers. CV Align provides instant ATS compatibility scores and suggestions to improve your resume's chances of passing automated screening.",
+              text: "An ATS score checker analyzes your resume to determine how well it will perform with Applicant Tracking Systems used by employers. Job Winner provides instant ATS compatibility scores and suggestions to improve your resume's chances of passing automated screening.",
             },
           },
           {
@@ -124,15 +161,15 @@ export function meta({}: Route.MetaArgs) {
             name: "How does the AI resume analyzer work?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "CV Align uses advanced AI to analyze your resume's content, structure, keywords, and formatting. It compares your resume against job descriptions and ATS requirements, then provides actionable feedback to help you improve your resume and increase your chances of landing interviews.",
+              text: "Job Winner uses advanced AI to analyze your resume's content, structure, keywords, and formatting. It compares your resume against job descriptions and ATS requirements, then provides actionable feedback to help you improve your resume and increase your chances of landing interviews.",
             },
           },
           {
             "@type": "Question",
-            name: "Is CV Align free to use?",
+            name: "Is Job Winner free to use?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes, CV Align is completely free to use. Upload your resume, add a job description, and get instant AI-powered feedback without any cost or credit card required.",
+              text: "Yes, Job Winner is completely free to use. Upload your resume, add a job description, and get instant AI-powered feedback without any cost or credit card required.",
             },
           },
         ],
@@ -303,7 +340,7 @@ const steps = [
 const testimonials = [
   {
     quote:
-      "CV Align helped me land my dream job at a Fortune 500 company. The AI feedback was incredibly detailed and actionable.",
+      "Job Winner helped me land my dream job at a Fortune 500 company. The AI feedback was incredibly detailed and actionable.",
     author: "Sarah Chen",
     role: "Software Engineer",
     company: "Tech Company",
@@ -321,7 +358,7 @@ const testimonials = [
   },
   {
     quote:
-      "As a career counselor, I recommend CV Align to all my clients. It's like having an expert resume reviewer available 24/7.",
+      "As a career counselor, I recommend Job Winner to all my clients. It's like having an expert resume reviewer available 24/7.",
     author: "Emily Watson",
     role: "Career Counselor",
     company: "Career Services",
@@ -824,7 +861,7 @@ export default function Landing() {
           </h2>
           <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
             Join thousands of job seekers who have improved their resumes and
-            landed more interviews with CV Align.
+            landed more interviews with Job Winner.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

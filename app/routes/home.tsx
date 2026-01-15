@@ -6,12 +6,39 @@ import { Link, useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 
 export function meta({}: Route.MetaArgs) {
+  const siteUrl = "https://jobwinner.vercel.app";
+  const title = "Dashboard - Track Your Resume Analysis | Job Winner";
+  const description =
+    "Access your resume analysis dashboard. Track all your resume submissions, view ATS scores, and review AI-powered feedback for your job applications.";
+  const keywords =
+    "job winner, jobwinner ai, ai resume analyzer, resume dashboard, resume tracker, ATS scores, resume history, job applications, resume analysis dashboard, " +
+    "track resume, resume submissions, resume feedback history, resume analytics, resume performance, " +
+    "job application tracker, career dashboard, resume management, resume portfolio";
+
   return [
-    { title: "CV Align | Dashboard" },
-    {
-      name: "description",
-      content: "Track your resume applications and ratings",
-    },
+    // Primary Meta Tags
+    { title },
+    { name: "description", content: description },
+    { name: "keywords", content: keywords },
+    { name: "robots", content: "noindex, follow" }, // Noindex for authenticated user dashboard
+
+    // Canonical URL
+    { tagName: "link", rel: "canonical", href: `${siteUrl}/dashboard` },
+
+    // Open Graph
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: `${siteUrl}/dashboard` },
+    { property: "og:title", content: title },
+    { property: "og:description", content: description },
+    { property: "og:image", content: `${siteUrl}/images/logo.png` },
+    { property: "og:site_name", content: "Job Winner" },
+    { property: "og:locale", content: "en_US" },
+
+    // Twitter Card
+    { name: "twitter:card", content: "summary" },
+    { name: "twitter:title", content: title },
+    { name: "twitter:description", content: description },
+    { name: "twitter:image", content: `${siteUrl}/images/logo.png` },
   ];
 }
 

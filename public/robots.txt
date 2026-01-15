@@ -1,5 +1,5 @@
-# CV Align - AI Resume Analyzer
-# https://cvalign.onrender.com
+# Job Winner - AI Resume Analyzer
+# https://jobwinner.vercel.app
 
 User-agent: *
 Allow: /
@@ -8,7 +8,7 @@ Disallow: /wipe
 Disallow: /api/
 
 # Sitemaps
-Sitemap: https://cvalign.onrender.com/sitemap.xml
+Sitemap: https://jobwinner.vercel.app/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1

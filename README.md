@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="public/images/logo.svg" alt="CV Align Logo" width="80" height="80">
+  <img src="public/images/logo.svg" alt="JOB WINNER Logo" width="80" height="80">
   
-  <h1>CV Align</h1>
+  <h1>Job Winner</h1>
   <p><strong>AI-Powered Resume Analyzer for Job Seekers</strong></p>
   
   <p>
-    <a href="https://cvalign.onrender.com">
+    <a href="https://jobwinner.vercel.app">
       <img src="https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-4c84f3?style=for-the-badge" alt="Live Demo">
     </a>
   </p>
@@ -39,7 +39,7 @@
 
 ## 🎯 Overview
 
-**CV Align** is an intelligent resume analyzer that helps job seekers optimize their resumes for specific job positions. Using advanced AI, it provides:
+**Job Winner** is an intelligent resume analyzer that helps job seekers optimize their resumes for specific job positions. Using advanced AI, it provides:
 
 - **ATS (Applicant Tracking System) Score** - See how well your resume matches the job description
 - **Personalized Feedback** - Get actionable suggestions to improve your resume
@@ -52,11 +52,11 @@ Simply upload your resume, provide the job details, and receive instant AI-power
 
 ## 🌐 Live Demo
 
-**Experience CV Align in action:**
+**Experience Job Winner in action:**
 
 <p align="center">
-  <a href="https://cvalign.onrender.com">
-    <img src="https://img.shields.io/badge/🔗_https://cvalign.onrender.com-Visit_Now-success?style=for-the-badge" alt="Live Demo">
+  <a href="https://jobwinner.vercel.app">
+    <img src="https://img.shields.io/badge/🔗_https://jobwinner.vercel.app-Visit_Now-success?style=for-the-badge" alt="Live Demo">
   </a>
 </p>
 
@@ -74,6 +74,21 @@ Simply upload your resume, provide the job details, and receive instant AI-power
 | 🎨 **Modern UI**               | Clean, responsive design that works on all devices          |
 | ☁️ **Cloud Storage**           | Your resumes are securely stored in the cloud               |
 | 🚀 **Fast & Lightweight**      | Built with Vite for blazing-fast performance                |
+| 🔍 **SEO Optimized**           | Fully optimized for search engines with structured data     |
+
+### 🔍 SEO & Production Features
+
+Job Winner is production-ready with comprehensive SEO optimization:
+
+- **✅ Complete Meta Tags** - Title, description, keywords, and robots directives on all pages
+- **✅ Open Graph Tags** - Optimized social media previews for Facebook, LinkedIn, Twitter
+- **✅ Structured Data** - JSON-LD schemas (WebApplication, Organization, FAQPage)
+- **✅ Sitemap & Robots** - Properly configured for search engine crawling
+- **✅ Security Headers** - X-Frame-Options, CSP, XSS protection via Vercel
+- **✅ Performance Optimized** - Preconnect, DNS prefetch, optimized font loading
+- **✅ Google Search Console Ready** - Verification file included, full setup guide provided
+
+📖 **See [SEO_GUIDE.md](SEO_GUIDE.md) for complete setup instructions**
 
 ---
 
@@ -297,7 +312,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
     <strong>Made with ❤️ for Job Seekers</strong>
   </p>
   <p>
-    <a href="https://cvalign.onrender.com">Live Demo</a> •
+    <a href="https://jobwinner.vercel.app">Live Demo</a> •
     <a href="#-getting-started">Get Started</a> •
     <a href="#-contributing">Contribute</a>
   </p>
