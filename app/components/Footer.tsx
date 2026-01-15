@@ -17,7 +17,7 @@ const Footer = () => {
                 alt="JOB WINNER"
                 className="w-10 h-10 rounded-xl object-contain"
               />
-              <span className="text-xl font-bold text-white">JOB WINNER</span>
+              <span className="text-xl font-bold text-white">Job Winner</span>
             </Link>
             <p className="text-gray-400 max-w-md mb-6">
               AI-powered resume analysis that helps you stand out. Get instant
@@ -136,9 +136,21 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-gray-500">
-              © {currentYear} Job Winner. All rights reserved.
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-sm text-gray-500">
+              <p>© {currentYear} Job Winner. All rights reserved.</p>
+              <span className="hidden md:inline">•</span>
+              <p>
+                Developed by{" "}
+                <a
+                  href="https://www.myntrixers.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-400 hover:text-indigo-300 transition-colors font-medium"
+                >
+                  Myntrixers
+                </a>
+              </p>
+            </div>
             <div className="flex gap-6 text-sm">
               <a
                 href="#"
